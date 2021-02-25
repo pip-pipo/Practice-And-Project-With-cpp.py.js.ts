@@ -1,0 +1,119 @@
+/* body {text-align: center;font-family: sans-serif;}
+
+canvas{
+    background:#000;
+} */
+
+/* .transition{
+    width:400px;height:400px;border-radius:50%;
+    transition:all ease-in-out 4s;
+    background:#ef6155;
+    
+}
+
+.transition:hover{
+    width:300px;height:400px;
+    transform:translateX(-100)
+} */
+
+/* .div1{
+    background:#446fff;
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    background:lightblue;
+    transform:translate(-2005px);
+    trasnsition:all 300ms linear ;
+}
+.div1_toggle {
+  transform:translate(-2005px);
+}
+.div1:hover{
+    background:#004080;
+}
+button{
+    padding:30px;
+    border:1px solid #13378a ;
+    border-radius:50%;
+
+}
+button:hover{
+    background:red;
+}
+body{
+    background-color:#13378a;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;align-items:center;
+}
+
+.random{
+    margin:20px;
+    width:500px;
+    height:100px;
+    border:1px solid #fff;
+    box-shadow:1x 2px 1px  2px #000;
+    display:flex;
+    justify-content:center;align-items:center;
+    flex-direction:column;
+}
+
+.result{
+    overflow:hidden;
+    margin:100px 0px 0px 0px;
+    width:510px;
+    height:200px;
+    top:0;
+    position:absolute;
+    background:#fff;
+    word-wrap:break-word;
+} */
+
+/* .circle {
+  width: 300px;
+  height: 300px;
+  background: red; */
+  /* transform:rotate(0deg);*/
+
+  /* transform: rotateY(55deg); */
+  /* transform:translate3d(40px,80px,80px);
+   */
+   /* transform:rotate3d(100deg); */
+  /* animation: name 300ms ease-in infinite; */
+  /* transition: 2s ease-in ; */
+/* } */
+/* .circle:hover {
+  background: black;
+}
+
+@keyframes name {
+  0% {
+    transform: rotate(50deg);
+  },
+  80% {
+    transform: rotate(100deg);
+  }
+} */
+
+
+
+/* button{
+    position: absolute;
+    display: flex;
+    transform: translate(100px,-100px);
+    justify-content: center;align-items:center;
+}
+img{
+    position: relative;
+}
+.imgs{
+    position: relative;
+} */
+
+.container{
+    width: 50%;
+    margin:auto;
+    height:20vh;
+    overflow: hidden;
+}
