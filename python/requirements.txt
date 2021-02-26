@@ -1,0 +1,11 @@
+autopep8 @ file:///tmp/build/80754af9/autopep8_1613246362269/work
+certifi==2020.12.5
+colorama==0.4.4
+constant==0.0.4
+curser==1.0.1
+Jinja2==2.11.3
+MarkupSafe==1.1.1
+pycodestyle @ file:///home/ktietz/src/ci_mi/pycodestyle_1612807597675/work
+pygame==2.0.1
+toml @ file:///tmp/build/80754af9/toml_1592853716807/work
+wincertstore==0.2

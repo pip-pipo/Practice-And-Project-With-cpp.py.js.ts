@@ -1,0 +1,5 @@
+Anaconda Command Prompt : (conda list --export > package-list.txt)
+Command Line/Terminal : (pip freeze > requirements.txt)
+
+conda install in a specific env (conda install -n yourenvname [package])
+
