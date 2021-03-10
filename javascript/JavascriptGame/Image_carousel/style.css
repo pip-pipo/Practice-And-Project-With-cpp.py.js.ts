@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.carousel{
+    position: relative;
+}
+
+.main_carousel{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    
+    align-items: center;
+    border: 1px solid black;
+    /* overflow: hidden; */
+}
+.caousel_actions{
+    display: flex;
+    width: 450px;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+  
+}
+.caousel_actions button{
+  position: relative;
+    width: 60px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    transform:translateY(-940%) ;
+    -webkit-transform:translateY(-940%) ;
+    -moz-transform:translateY(-940%) ;
+    -ms-transform:translateY(-940%) ;
+    -o-transform:translateY(-940%) ;
+}
+.carouselDiv img{
+    width: 450px;
+    object-fit: cover;
+}

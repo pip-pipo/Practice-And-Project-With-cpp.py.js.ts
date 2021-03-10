@@ -1,0 +1,19 @@
+body { background-color: #eec0c6; display: flex; min-height: 100vh; background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%); margin: 0; padding: 0; } 
+.container { width: 300px; word-wrap: break-word; white-space: normal; min-width: 200px; margin: auto; background: rgb(255, 255, 255); color: black; height: auto; border-radius: 0.10rem; -webkit-border-radius: 0.10rem; -moz-border-radius: 0.10rem; -ms-border-radius: 0.10rem; -o-border-radius: 0.10rem; } 
+.title { font-size: 1.50rem; padding: 2rem; } 
+.question { list-style: none; padding: 0; margin-bottom: 3rem; padding: 1rem; } 
+.question li { margin: 10px 0; font-family: monospace; font-size: 1.10rem; } 
+.buttonSubmit { color:white; width: 100%; padding: 10px 15px; outline: none; border:1px solid green; border-radius: 0.10rem; background: rgb(13, 134, 94); -webkit-border-radius: 0.10rem; -moz-border-radius: 0.10rem; -ms-border-radius: 0.10rem; -o-border-radius: 0.10rem; transition: 400ms all linear; -webkit-transition: 400ms all linear; -moz-transition: 400ms all linear; -ms-transition: 400ms all linear; -o-transition: 400ms all linear; } 
+.buttonSubmit:hover { background: #000; color: white; } 
+
+.score{
+    background: #000;
+    color: white;
+    font-size: 2.30rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
