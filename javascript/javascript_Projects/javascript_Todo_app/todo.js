@@ -1,59 +1,64 @@
 /** @format */
 
-const input = document.querySelector('input');
-const ul = document.querySelector('ul');
-const form = document.querySelector('form');
-let itemCount = 0;
+const input = document.querySelector("input")
+const ol = document.querySelector("#ol")
+const form = document.querySelector("form")
 
-let mytodo = JSON.parse(localStorage.getItem('tood'));
+// make event
+form.addEventListener("submit", submitForm)
 
-form.addEventListener('submit', submitForm);
-
+// event handle
 function submitForm(e) {
- e.preventDefault();
+ e.preventDefault()
+ let inputValue = input.value;
+ let DataFromLocalStorage = localStorage.getItem("todos")
 
- addTodo();
-}
-
-function addTodo() {
- if (mytodo) {
-  const data = mytodo.map((data) => {
-   return `
-        <li>${data.text}</li>
-        `;
-  });
-
-  ul.innerHTML=  data.join('');
-
+ let taskObj;
+ if (DataFromLocalStorage == null) {
+  taskObj = [];
+ } else {
+  taskObj = JSON.parse(DataFromLocalStorage)
  }
 
- let InputValue = input.value;
- 
+ if(inputValue.length <= 100){
+       taskObj.push(inputValue)
+ };
 
 
- if (InputValue) {
-  const li = document.createElement('li');
 
-  li.addEventListener('click', () => {
-   li.classList.toggle('compleate');
-  });
-  li.innerText = InputValue;
- 
-  ul.appendChild(li);
-  InputValue = '';
- }
-
- let todos = [];
-
- const allLi = document.querySelectorAll('li');
-
- allLi.forEach((todo) => {
-  todos.push({
-   text: todo.innerText,
-   compleate: todo.classList.contains('compleate')
-  });
- });
- console.log(todos);
-
- localStorage.setItem('tood', JSON.stringify(todos));
+ localStorage.setItem("todos", JSON.stringify(taskObj))
+ addItemInUl(taskObj);
 }
+
+// set data to ul or ol;
+function addItemInUl(taskObj) {
+ let allData = taskObj;
+ 
+ if (allData) {
+  const allTodoFromLocalStorage = allData.map((value, index) => {
+   return  `<li data="${index}">${value}</li>`;
+  })
+
+  ol.innerHTML = allTodoFromLocalStorage.join("")
+ };
+
+const li = ol.querySelectorAll('li');
+
+ li.forEach(item=>{
+       item.addEventListener('click',()=>{
+             item.classList.toggle('compleate');
+             item.setAttribute('title',"Right click to delete")
+       });
+       item.addEventListener("contextmenu",(e)=>{
+           
+             item.remove();
+       })
+ })
+
+}
+
+// load all data from localstorage
+window.addEventListener("load", () => {
+ let DataFromLocalStorage = JSON.parse(localStorage.getItem("todos"))
+ addItemInUl(DataFromLocalStorage)
+});
