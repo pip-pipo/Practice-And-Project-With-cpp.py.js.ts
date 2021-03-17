@@ -160,3 +160,50 @@
 
 // const arr = [...new Set([3, 1, 2, 3, 4])];
 // console.log(arr.length, arr[2]);
+
+// function  sum(a,b,c) {
+//    return a+b+c; 
+// }
+// console.log(sum(29,4,5))
+
+
+// let data = {
+//     name:undefined,
+//     roll:null,
+//     class:'10',
+// };
+
+// console.log(data?.name);
+// console.log(data?.roll);
+// console.log(data?.class);
+
+function sum(x){
+    return(y)=>{
+        console.log(y+x);
+        return(z)=>{
+            console.log(z+y);
+
+            return x+y+z;
+        }
+    }
+}
+
+console.log(sum(2)(3)(4));
+
+
+
+function fx(x){
+  return (y) => {
+    return (z) => {
+      return (c) => {
+        return x+y+z+c;
+      }
+    }
+  }
+}
+
+const simplifyFX = fx(25);
+simplifyFX(1)(2)(3)
+>31
+
+
