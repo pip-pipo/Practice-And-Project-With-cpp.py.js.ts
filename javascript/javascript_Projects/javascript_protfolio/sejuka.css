@@ -1,0 +1,24 @@
+.sejuka{
+    
+    width:60%;
+    object-fit:cover;
+}
+html{scroll-behavior: smooth;}
+
+body{ background:rgb(255, 255, 255);
+
+display: flex;
+justify-content: center;
+align-items: center;
+min-height:100vh;
+flex-direction: column;
+
+}
+.write{
+    transition:600ms;
+    background: #000;
+    color: #fff;
+     padding:10px 15px;margin:2rem;
+     font-size:1.50rem;
+}
+

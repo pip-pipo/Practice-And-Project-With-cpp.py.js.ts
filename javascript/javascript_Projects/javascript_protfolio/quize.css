@@ -1,0 +1,94 @@
+/** @format */
+
+html{scroll-behavior: smooth;}
+
+body{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0;
+    background: rgb(10, 66, 139);
+}
+ul{
+padding:30;
+}
+.container {
+ border-radius: 10px;
+ padding:30px;
+ background: rgb(238, 236, 236);
+ height:auto;
+font-size:1.50rem;
+line-height: 3rem;
+}
+.closeMenu{
+    font-size:3rem;
+    color:rgb(1, 145, 97);
+    width:100%;
+    background: #000;
+    border-radius:1%;
+    padding:10px;
+    text-align: center;
+}
+.closeMenu:hover{
+    color:rgb(104, 22, 180);
+}
+
+.container > h3{
+    white-space: wrap;
+    font-size:1.40rem;
+    background: #000;
+    color: white;
+    padding:5px;
+    border-radius: 10px;
+}
+
+.progress{
+    width:100px;
+    height:100px;
+    border-radius:100%;
+    border:7px solid aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: fixed;
+   transform: translateY(400px);
+}
+.progress span{
+    width:100px;
+    height:100px;
+    border-radius:100%;
+    border-top:6px solid rgb(155, 41, 41);
+    animation:1s loop infinite ease-in-out;
+}
+
+@keyframes loop{
+    0%{ transform:rotate(0deg)}
+    100%{ transform:rotate(360deg)}
+
+}
+
+.quize{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    width:90%;
+    padding:3rem 10px;
+    margin-top:6rem;
+    color: rgb(230, 220, 220);
+   
+    box-shadow: 0px 1px 1px 2px rgb(255, 254, 254);
+}
+.quize > h3{
+    font-size:1.50rem;
+    margin: 2rem 0;
+}
+
+.options{
+    line-height:2rem;
+}

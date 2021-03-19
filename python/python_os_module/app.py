@@ -88,12 +88,12 @@
 # import numpy as np
 # print(np.zeros((5000,10)))
 
-def increment():
-    i = 0
-    if(i<1):
-        print(i)
-        i+=1
-        print(i)
+# def increment():
+#     i = 0
+#     if(i<1):
+#         print(i)
+#         i+=1
+#         print(i)
 
-increment()
+# increment()
     

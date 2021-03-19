@@ -1,0 +1,202 @@
+/** @format */
+html{scroll-behavior: smooth;}
+
+
+* {
+ box-sizing: border-box;
+}
+body {
+ margin: 0;
+ padding: 0;
+ background: rgb(7, 53, 151);
+}
+
+.heart {
+ position: fixed;
+ top: -10vh;
+ transform: translateY(0);
+ animation: rain linear 1s;
+ font-size: 2rem;
+}
+@keyframes rain {
+ to {
+  transform: translateY(105vh);
+ }
+}
+
+
+
+.text {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+ flex-direction: column;
+}
+
+button{
+  padding:15px 20px;
+  border: 2px solid aqua ;
+  background: transparent;
+  border-radius:10px;
+}
+
+button:hover{
+  background: rgb(10, 133, 138);
+}
+span{
+  color:white;
+}
+a{
+  text-decoration:none;
+  color:white;
+  font-size: 2rem;
+}
+h3 {
+ font-size: 3rem;
+ font-weight: bold;
+ animation: mahima 4s infinite;
+ transition: 600ms ease-in-out;
+}
+
+@keyframes mahima {
+ 0% {
+  color: red;
+  font-size:4rem;
+ }
+ 10% {
+  color: rgb(37, 158, 74);
+  font-size:4.50rem;
+ }
+ 20% {
+  color: rgba(29, 9, 85, 0.438);
+  font-size:3.50rem;
+ }
+ 30% {
+  color: rgb(193, 219, 41);
+  font-size:4rem;
+ }
+ 40% {
+  color: rgb(255, 255, 255);
+  font-size:2rem;
+ }
+
+ 50% {
+  color: rgba(10, 136, 38, 0.363);
+  font-size:5rem;
+ }
+
+ 60% {
+  color: rgba(112, 55, 28, 0.61);
+  font-size:7rem;
+ }
+ 70% {
+  color: rgb(15, 14, 14);
+  font-size:3rem;
+ }
+ 80% {
+  color: rgb(167, 97, 97);
+  font-size:6rem;
+ }
+ 90% {
+  color: rgba(54, 12, 25, 0.048);
+  font-size:4rem;
+ }
+ 100% {
+  color: rgb(2, 2, 2);
+  font-size:3rem;
+ }
+}
+
+
+@media screen and (max-width:768px){
+
+
+  .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    flex-direction: column;
+   }
+   
+   button{
+     padding:10px 15px;
+     border: 2px solid aqua ;
+     background: transparent;
+     border-radius:10px;
+     outline: none;
+   }
+   
+   button:hover{
+     background: rgb(10, 133, 138);
+   }
+   span{
+     color:white;
+     width:90%;
+   }
+   a{
+     text-decoration:none;
+     color:white;
+     font-size: 1.50rem;
+   }
+   h3 {
+    font-size: 1rem;
+   
+    font-weight: bold;
+    animation: mahima 4s infinite;
+    transition: 600ms ease-in-out;
+   }
+   
+   @keyframes mahima {
+    0% {
+     color: red;
+     font-size:1rem;
+    }
+    10% {
+     color: rgb(37, 158, 74);
+     font-size:1.50rem;
+    }
+    20% {
+     color: rgba(97, 238, 121, 0.438);
+     font-size:1.50rem;
+    }
+    30% {
+     color: rgb(219, 41, 94);
+     font-size:2rem;
+    }
+    40% {
+     color: rgb(255, 255, 255);
+     font-size:1rem;
+    }
+   
+    50% {
+     color: rgba(136, 29, 10, 0.363);
+     font-size:1rem;
+    }
+   
+    60% {
+     color: rgba(112, 55, 28, 0.61);
+     font-size:2rem;
+    }
+    70% {
+     color: rgb(15, 14, 14);
+     font-size:1rem;
+    }
+    80% {
+     color: rgb(167, 97, 97);
+     font-size:2rem;
+    }
+    90% {
+     color: rgba(28, 170, 47, 0.048);
+     font-size:1rem;
+    }
+    100% {
+     color: rgb(255, 255, 255);
+     font-size:1rem;
+    }
+   }
+   
+
+
+}
