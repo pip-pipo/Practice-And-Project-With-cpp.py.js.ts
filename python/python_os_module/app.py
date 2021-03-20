@@ -73,7 +73,6 @@
 # print(CalCulateTex(10,0.1))
 
 
-
 # class mahima:
 #     def __init__(self,is_It_Me):
 #         self.is_It_Me = is_It_Me
@@ -96,4 +95,4 @@
 #         print(i)
 
 # increment()
-    
+
