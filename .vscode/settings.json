@@ -3,5 +3,7 @@
     "files.associations": {
         "iostream": "cpp",
         "string": "cpp"
-    }
+    },
+    "python.pythonPath": "C:\\Users\\USER\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+    "jupyter.jupyterServerType": "local"
 }
