@@ -43,13 +43,18 @@ data = my_Database.data
 # print("Data are successfully Inserted...")
 # print('Multiple posts: {0}'.format(data.inserted_ids))
 
-myobj = {
-    "id":3,
-    "name":"morsalin"
-}
+# myobj = {
+#     "id":3,
+#     "name":"morsalin"
+# }
 
 
-data.insert_one(myobj)
+# data.insert_one(myobj)
+dictInstance = {"id":4,"name":"i am i m r a n"}
+
+print(data.insert_one(dictInstance))
+
+print(data.find())
 
 
 

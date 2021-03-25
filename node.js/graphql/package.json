@@ -1,0 +1,19 @@
+{
+  "name": "graphql-appoloserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "author": "imran",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.21.2",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

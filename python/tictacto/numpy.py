@@ -46,3 +46,27 @@
 
 # Python code to demonstrate Type conversion
 # using  dict(), complex(), str()
+
+
+
+
+try:
+    for i in range(5):
+        print(i)
+    print(x)
+except:
+    print("and occured value dose'nt exist")
+finally:
+    print('1st block is execuited')
+
+try:
+    x = 30
+    print(x)
+    for i in range(5):
+        print(d+5)
+except NameError:
+
+    print("x is not define")
+except:
+    print("something went wornge")
+    
