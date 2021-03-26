@@ -177,33 +177,62 @@
 // console.log(data?.roll);
 // console.log(data?.class);
 
-function sum(x){
-    return(y)=>{
-        console.log(y+x);
-        return(z)=>{
-            console.log(z+y);
+// function sum(x){
+//     return(y)=>{
+//         console.log(y+x);
+//         return(z)=>{
+//             console.log(z+y);
 
-            return x+y+z;
-        }
+//             return x+y+z;
+//         }
+//     }
+// }
+
+// console.log(sum(2)(3)(4));
+
+
+
+// function fx(x){
+//   return (y) => {
+//     return (z) => {
+//       return (c) => {
+//         return x+y+z+c;
+//       }
+//     }
+//   }
+// }
+
+// const simplifyFX = fx(25);
+// simplifyFX(1)(2)(3)
+// >31
+
+
+// const student = {
+//     name: "Rahul", 
+//     showName: function(friend1, friend2){
+//         console.log(this.name); 
+//         console.log(this.hero);
+//         console.log(friend1); 
+//         console.log(friend2); 
+//     },
+//     main:function(){
+//       console.log(this.name);
+//     }
+// }
+// student.main()
+// student.showName.call({name: "Rahfgful",hero:"hello" },"John", "Jane"); 
+// Rahul
+// John
+// Jane
+
+
+const student = {
+    name: "Rahul", 
+    showName: function(){
+        console.log(this.name); 
     }
 }
-
-console.log(sum(2)(3)(4));
-
-
-
-function fx(x){
-  return (y) => {
-    return (z) => {
-      return (c) => {
-        return x+y+z+c;
-      }
-    }
-  }
-}
-
-const simplifyFX = fx(25);
-simplifyFX(1)(2)(3)
->31
-
-
+const greetStudent = student.showName.bind({
+    name: "Rahul from Bind"
+})
+ greetStudent(); // Rahul from Bind)
