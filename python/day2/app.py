@@ -47,8 +47,11 @@
 # print(f"{bcolors.UNDERLINE}hai ther{bcolors.BOLD}")
 
 
-import pyfiglet
+# import pyfiglet
 
-txt = pyfiglet.figlet_format("Morsalin",font="avatar")
+# txt = pyfiglet.figlet_format("Morsalin",font="avatar")
 
-print(txt)
+# print(txt)
+
+
+print("hello world")

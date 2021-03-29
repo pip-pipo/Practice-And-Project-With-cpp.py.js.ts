@@ -12,3 +12,4 @@ soup = bs(r.content,'html.parser')
 
 profile_Image = soup.find('img',{'alt':'Avatar'})['src']
 print(profile_Image)
+ 

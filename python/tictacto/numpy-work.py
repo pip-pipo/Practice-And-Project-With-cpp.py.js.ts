@@ -50,23 +50,26 @@
 
 
 
-try:
-    for i in range(5):
-        print(i)
-    print(x)
-except:
-    print("and occured value dose'nt exist")
-finally:
-    print('1st block is execuited')
+# try:
+#     for i in range(5):
+#         print(i)
+#     print(x)
+# except:
+#     print("and occured value dose'nt exist")
+# finally:
+#     print('1st block is execuited')
 
-try:
-    x = 30
-    print(x)
-    for i in range(5):
-        print(d+5)
-except NameError:
+# try:
+#     x = 30
+#     print(x)
+#     for i in range(5):
+#         print(d+5)
+# except NameError:
 
-    print("x is not define")
-except:
-    print("something went wornge")
-    
+#     print("x is not define")
+# except:
+#     print("something went wornge")
+
+import numpy as np
+
+print(np.array([4,5,6])) 
