@@ -47,9 +47,13 @@ int main()
 
     // int integervalr = int(num_double);
     // cout<<integervalr<<endl;
-    char str[] = "morsalin";
-    cout<<str<<endl;
-    int num = atoi(str);
-    cout<<num;
+    // char str[] = "morsalin";
+    // cout<<str<<endl;
+    // int num = atoi(str);
+    // cout<<num;
+
+    int num =123;
+    string str = to_string(num);
+    cout<<str;
     return 0;
 }
