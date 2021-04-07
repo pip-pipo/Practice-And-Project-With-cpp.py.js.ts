@@ -1,7 +1,7 @@
 /** @format */
 
-let width: number = 0;
-const el: HTMLElement = document.querySelector('.border');
+// let width: number = 0;
+// const el: HTMLElement = document.querySelector('.border');
 // el.addEventListener('mousemove',mouseOver);
 
 // function mouseOver(){
@@ -57,11 +57,22 @@ const el: HTMLElement = document.querySelector('.border');
 //  hello.style.display="none";
 // });
 
-var overlay:HTMLElement = document.getElementById("overlay");
+// var overlay:HTMLElement = document.getElementById("overlay");
 
-window.addEventListener('load', function(){
-    setTimeout(()=>{
+// window.addEventListener('load', function(){
+//     setTimeout(()=>{
 
-        overlay.style.display = 'none';
-    },500)
-})
+//         overlay.style.display = 'none';
+//     },500)
+// })
+
+interface Hero  {
+    name:string,
+    data:Array<string>,
+}   
+
+function takeDataHero(Hero:Hero){
+    console.log(Hero.name.concat(" salin"))
+}
+
+takeDataHero({name:"morsalin",data:["morsalin","hero"]})
