@@ -1,1 +1,0 @@
-print('this is test py will exeicute when  os.execvp() will call')
