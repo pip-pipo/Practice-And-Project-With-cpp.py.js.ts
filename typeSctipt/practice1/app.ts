@@ -66,13 +66,33 @@
 //     },500)
 // })
 
-interface Hero  {
-    name:string,
-    data:Array<string>,
-}   
+// interface Hero  {
+//     name:string,
+//     data:Array<string>,
+// }
 
-function takeDataHero(Hero:Hero){
-    console.log(Hero.name.concat(" salin"))
+// function takeDataHero(Hero:Hero){
+//     console.log(Hero.name.concat(" salin"))
+// }
+
+// takeDataHero({name:"morsalin",data:["morsalin","hero"]})
+interface T {
+  id: number;
+  name?: string;
 }
 
-takeDataHero({name:"morsalin",data:["morsalin","hero"]})
+// const data = fetch("https://fakestoreapi.com/products")
+// .then(res=>res.json())
+// .then(json=>console.log(json))
+
+const get = (data: T) => {
+  setTimeout(() => {
+    console.log(data);
+    if (data) return data;
+    else return console.error("please add some value");
+  }, 1000);
+};
+
+const allData = get({ id: 3, name: "morsalin" });
+
+console.log(allData);
