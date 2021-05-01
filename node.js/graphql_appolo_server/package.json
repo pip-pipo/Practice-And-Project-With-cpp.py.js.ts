@@ -1,0 +1,17 @@
+{
+  "name": "graphql_appolo_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
