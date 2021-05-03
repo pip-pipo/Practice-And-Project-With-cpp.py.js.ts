@@ -25,34 +25,76 @@
 
 
 
-#include<iostream>
+// #include<iostream>
 
+// using namespace std;
+
+// bool isSeparator(char c, char * separators){
+//     char endOfString = '\0';
+//     char* sepPtr = separators;
+//     bool ret = false;
+
+//     while(*sepPtr != endOfString){
+//         if(c == *sepPtr){
+//             ret = true;
+//             break;
+//         }
+//         sepPtr++;
+//     }
+//     return ret;
+// }
+
+
+// int charArrayLength(char* a){
+    
+// }
+
+
+
+// int main(){
+
+// cout<<"hero"<<endl;
+//     return 0;
+// }
+
+
+
+#include<iostream>
 using namespace std;
 
-bool isSeparator(char c, char * separators){
-    char endOfString = '\0';
-    char* sepPtr = separators;
-    bool ret = false;
-
-    while(*sepPtr != endOfString){
-        if(c == *sepPtr){
-            ret = true;
-            break;
-        }
-        sepPtr++;
-    }
-    return ret;
-}
+auto salin(int a, int b ){
+    return "morsalin" + a + b;
+};
 
 
-int charArrayLength(char* a){
-    
-}
 
+
+long add2(int i = 1){
+    return 3 + i;
+};
 
 
 int main(){
 
-cout<<"hero"<<endl;
+  int fastdaysNumber =   add2(8);
+  cout<<fastdaysNumber<<endl;
+
+
+
+int const a[] = {36,4,56,66};
+int const n = sizeof(a);
+cout<<n<<"\n";
+
+cout <<a[0]<<endl;
+
+
+
+cout<<salin(3,4)<<endl;
+
+
+
+
+
     return 0;
 }
+

@@ -1,34 +1,81 @@
-var user = {
-    name: "morsalin",
-    id: 3434
-};
-console.log(user);
-var MakeToggle = /** @class */ (function () {
-    function MakeToggle(isToggle, htmlElement) {
-        this.isToggle = isToggle;
-        this.htmlElement = htmlElement;
+// interface User {
+//     name: string,
+//     id?:number,
+// }
+// var user:User ={
+//     name:"morsalin",
+//     id:3434,
+// }
+// console.log(user)
+// interface MakeToggle {
+//     isToggle:boolean,
+//     htmlElement:string,
+// }
+// class MakeToggle{
+//     isToggle:boolean;
+//     htmlElement:string;
+//     constructor(isToggle:boolean, htmlElement:string,){
+//         this.isToggle = isToggle;
+//         this.htmlElement=htmlElement;
+//     }
+//     MakeToggle(htmlElement:string,isToggle:boolean){
+//         if(htmlElement){
+//             if(isToggle) return false
+//             else return true
+//         }
+//     }
+// }
+// var users:MakeToggle = new MakeToggle(true,"sting")
+// console.log(users.MakeToggle("morsalin",false))
+// type myBool = true | false;
+// console.log()
+// var foo = "morsalin";
+// console.log(typeof foo)
+// if(typeof foo === "number") console.log("foo is a number")
+// const mains : Array<string> = ['morsalin','foo']
+// interface BackendTypes  {
+//     add : (obj:string) =>void;
+// }
+// interface Point {
+//     x:number;
+//     y:number;
+// }
+// function logPoint(p:Point){
+//     return p.x + p.y;   
+// }
+// console.log(logPoint({x:34,y:45}));
+// const rect = { x: 33, y: 3, width: 3, height: 80 };
+// logPoint(rect);
+function max() {
+    var numbers = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        numbers[_i] = arguments[_i];
     }
-    MakeToggle.prototype.MakeToggle = function (htmlElement, isToggle) {
-        if (htmlElement) {
-            if (isToggle)
-                return false;
-            else
-                return true;
-        }
-    };
-    return MakeToggle;
-}());
-var users = new MakeToggle(true, "sting");
-console.log(users.MakeToggle("morsalin", false));
-console.log();
-var foo = "morsalin";
-console.log(typeof foo);
-if (typeof foo === "number")
-    console.log("foo is a number");
-var mains = ['morsalin', 'foo'];
-function logPoint(p) {
-    return p.x + p.y;
+    var result = 0;
+    for (var _a = 0, numbers_1 = numbers; _a < numbers_1.length; _a++) {
+        var isBig = numbers_1[_a];
+        if (isBig > result)
+            result = isBig;
+    }
+    return result;
 }
-console.log(logPoint({ x: 34, y: 45 }));
-var rect = { x: 33, y: 3, width: 30, height: 80 };
-logPoint(rect);
+console.log(max(3, 4, 5, 6));
+console.log(Math.PI);
+function randomPoint(radius) {
+    var angle = Math.random() * 2 * Math.PI;
+    return { x: radius * Math.cos(angle), y: radius * Math.sin(angle) };
+}
+console.log(randomPoint(8));
+console.log(Math.floor(randomPoint(88).y));
+var count = 0, total = 0;
+while (count <= 10) {
+    total += count;
+    console.log(total);
+    count += 1;
+}
+function call() {
+    console.log('pinted call');
+}
+if (3 % 2 === 1) {
+    call();
+}

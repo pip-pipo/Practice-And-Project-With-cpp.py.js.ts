@@ -111,7 +111,6 @@
 // const b = myArray.reduce((agg,v,i,arr)=>agg+v(agg),1);
 // console.log(b);
 
-
 // const arr = [x => x * 1, x => x * 2, x => x * 3, x => x * 4];
 
 // console.log(arr.reduce((agg, el) => agg + el(agg), 1));
@@ -120,7 +119,6 @@
 // 2 + 2 * 2 = 6 (value of aggregator in next iteration)
 // 6 + 6 * 3 = 24 (value of aggregator in next iteration)
 // 24 + 24 * 4 = 120 (final value)
-
 
 // const func = [
 //  function () {
@@ -152,7 +150,6 @@
 
 // Question 9: Array Method Binding
 
-
 // const map = ['a','b','c',',df,','df'].map.bind([1,23,4,5,6,3]);
 // map(el => console.log(el));
 
@@ -162,10 +159,9 @@
 // console.log(arr.length, arr[2]);
 
 // function  sum(a,b,c) {
-//    return a+b+c; 
+//    return a+b+c;
 // }
 // console.log(sum(29,4,5))
-
 
 // let data = {
 //     name:undefined,
@@ -190,8 +186,6 @@
 
 // console.log(sum(2)(3)(4));
 
-
-
 // function fx(x){
 //   return (y) => {
 //     return (z) => {
@@ -206,30 +200,28 @@
 // simplifyFX(1)(2)(3)
 // >31
 
-
 // const student = {
-//     name: "Rahul", 
+//     name: "Rahul",
 //     showName: function(friend1, friend2){
-//         console.log(this.name); 
+//         console.log(this.name);
 //         console.log(this.hero);
-//         console.log(friend1); 
-//         console.log(friend2); 
+//         console.log(friend1);
+//         console.log(friend2);
 //     },
 //     main:function(){
 //       console.log(this.name);
 //     }
 // }
 // student.main()
-// student.showName.call({name: "Rahfgful",hero:"hello" },"John", "Jane"); 
+// student.showName.call({name: "Rahfgful",hero:"hello" },"John", "Jane");
 // Rahul
 // John
 // Jane
 
-
 // const student = {
-//     name: "Rahul", 
+//     name: "Rahul",
 //     showName: function(){
-//         console.log(this.name); 
+//         console.log(this.name);
 //     }
 // }
 // const greetStudent = student.showName.bind({
@@ -237,4 +229,105 @@
 // })
 //  greetStudent(); // Rahul from Bind)
 
+// class MakeRandom {
+//   constructor() {
+//     this.randomFirstNumber = 0;
+//     this.randomSecondNumber = 0;
+//     this.randomTherdNumber = 0;
+//     this.randomLastNumber = 0;
+//     this.executiontimes = 0;
+//   }
+//   makeRandom(table) {
+//     return (
+//       (table[3] * table[0] - table[2] * table[1]) /
+//       Math.sqrt(
+//         (table[2] + table[3]) *
+//           (table[0] + table[1]) *
+//           (table[1] + table[3]) *
+//           (table[0] + table[2])
+//       )
+//     );
+//   }
 
+//   Random(intNumber, lastIntNumber) {
+//     if (intNumber && lastIntNumber) {
+//       return Math.floor(this.makeRandom([lastIntNumber,intNumber,lastIntNumber,lastIntNumber]));
+//     } else {
+//       let execution;
+//       if (this.executiontimes !== 0) {
+//         execution = this.executiontimes;
+//         this.randomSecondNumber++;
+//         this.randomFirstNumber++;
+//         this.randomLastNumber++;
+//       } else {
+//         const executiontimesRandom = this.executiontimes;
+//         execution = 1;
+//         this.randomSecondNumber++;
+//         this.randomFirstNumber++;
+//         this.randomLastNumber++;
+//       }
+//       return this.makeRandom([
+//         execution,
+//         this.randomFirstNumber,
+//         this.randomLastNumber,
+//         this.randomSecondNumber,
+//       ]);
+//     }
+//   }
+// }
+
+// const Random = new MakeRandom();
+// console.log(Random.makeRandom([34, 43, 34, 34]));
+// console.log(Random.Random());
+// console.log(Random.Random());
+// console.log(Random.Random());
+// console.log(Random.Random());
+// console.log(Random.Random());
+// console.log(Random.Random());
+// console.log(Random.Random());
+// console.log(Random.Random());
+// console.log(Random.Random());
+// console.log(Random.Random());
+// console.log(Random.Random());
+// console.log(Random.Random());
+// console.log(Random.Random());
+// console.log(Random.Random());
+// console.log(Random.Random());
+// console.log(Random.Random(0,6));
+// console.log(Random.Random(0,6));
+// console.log(Random.Random(0,6));
+// console.log(Random.Random(0,6));
+// console.log(Random.Random(0,6));
+// console.log(Random.Random(0,6));
+
+
+
+function removeSpecificArrayIndex(array,index){
+    return array.slice(0,index).concat(array.slice(index+1))
+}
+
+console.log(removeSpecificArrayIndex(['a','4','c','v'],1));
+
+console.log('6'.padStart(5,'0'));
+let data  = [];
+let datas = "Secretarybirds specialize in stomping".split(" ");
+
+console.log(data.push(datas));
+console.log(data);
+
+
+console.log(-Infinity);
+
+console.log(Math.max(3,4,2,5));
+
+
+
+function max(...numbers){
+    let result = -Infinity;
+    for(let number of numbers){
+        if(number > result) result = number;
+    }
+    return result;
+}
+
+console.log(max(333332,44444444,5,6,333));
