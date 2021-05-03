@@ -1,98 +1,91 @@
-/** @format */
+// window.addEventListener("load", () => {
+  
+//   interface ContentType {
+//     id: number;
+//     title: string;
+//     subTitle: string;
+//   }
 
-// let width: number = 0;
-// const el: HTMLElement = document.querySelector('.border');
-// el.addEventListener('mousemove',mouseOver);
+//   const listOfContent:ContentType[] = [
+//     {
+//       id: 0,
+//       title: "web Developer",
+//       subTitle: "lorem ispsul",
+//     },
+//     {
+//       id: 1,
+//       title: "Android Developer",
+//       subTitle: "lorem ispsul",
+//     },
+//     {
+//       id: 2,
+//       title: "Ios Developer",
+//       subTitle: "lorem ispsul",
+//     },
+//     {
+//       id: 3,
+//       title: "Full-Stack Developer",
+//       subTitle: "lorem ispsul",
+//     },
+//     {
+//       id: 4,
+//       title: "Custom Developer",
+//       subTitle: "lorem ispsul",
+//     },
+//   ];
 
-// function mouseOver(){
-//     el.style.cursor = 'ew-resize';
-//     const heigth:number =(el.clientHeight  * 2);
-//     const width:number = (el.clientWidth  * 2);
-//     el.style.width = `${width}px`;
-//     el.style.height = `${heigth}px`
-//     console.log('mouseover')
+
+//  function makeSlide(listOfContent:ContentType[]):void{
+
+//    var slide = document.getElementById("slide");
+
+//   listOfContent.map((value,index)=>{
+//       var newDiv = document.createElement("div");
+//       newDiv.innerHTML =`
+//       <h2>${value.id}</h2>
+//       <h1>${value.title}</h1>
+//       <span>${value.subTitle}</span>
+//       `;
+//       newDiv.setAttribute("class", "slideCss")
+//       slide.appendChild(newDiv);
+//   })
+
+
+
+//  }
+//  makeSlide(listOfContent);
+
+
+
+// });
+
+
+// type someThing = {
+//   foo:number;
+//   bar:string;  
 
 // }
 
-// click whit mouse
-// el.addEventListener('mousedown',()=>{
-//     // el.removeEventListener('mouseover',mouseOver,false);
-//     console.log('mousedown')
-// })
-
-// single mouse event triger with html element
-
-// el.addEventListener('mouseover', () => {
-//  // el.removeEventListener('mouseover',mouseOver,false);
-//  console.log('mouseover');
-// });
-
-// every single move capture the triger in dom element
-// el.addEventListener('mousemove', () => {
-//  // el.removeEventListener('mouseover',mouseOver,false);
-//  console.log('mousemove');
-// });
-
-// when mouse is leave from the dom element
-// el.addEventListener('mouseleave', () => {
-//  // el.removeEventListener('mouseover',mouseOver,false);
-//  console.log('mouseleave');
-// });
-
-// when click in dom target element it's triger
-// same like mousedown;
-
-// el.addEventListener('mouseup', () => {
-//  // el.removeEventListener('mouseover',mouseOver,false);
-//  console.log('mouseup');
-// });
-
-// el.addEventListener('resize', () => {
-//  // el.removeEventListener('mouseover',mouseOver,false);
-//  console.log('mouseleft');
-// });
-
-// window.addEventListener('load', () => {
-//  let hello: HTMLElement = document.querySelector('#overlay');
-//  hello.style.display="none";
-// });
-
-// var overlay:HTMLElement = document.getElementById("overlay");
-
-// window.addEventListener('load', function(){
-//     setTimeout(()=>{
-
-//         overlay.style.display = 'none';
-//     },500)
-// })
-
-// interface Hero  {
-//     name:string,
-//     data:Array<string>,
+// function takeSomething(args:someThing):{name:string} {
+// return {name:"morsalnin"}
 // }
 
-// function takeDataHero(Hero:Hero){
-//     console.log(Hero.name.concat(" salin"))
+// function retuRnSting(){
+//   return "some string"
 // }
 
-// takeDataHero({name:"morsalin",data:["morsalin","hero"]})
-interface T {
-  id: number;
-  name?: string;
-}
+// console.log(takeSomething({foo:3, bar:retuRnSting()}))
 
-// const data = fetch("https://fakestoreapi.com/products")
-// .then(res=>res.json())
-// .then(json=>console.log(json))
 
-const get = (data: T) => {
-  setTimeout(() => {
-    console.log(data);
-    if (data) return data;
-    else return console.error("please add some value");
-  }, 1000);
-};
+// const arr:Array<any>= [
+//   "morsalnin",3,"heo",3.54,33*43,"morsalin"
+// ];
 
-const allData = get({ id: 3, name: "morsalin" });
+// console.log(arr)
 
-console.log(allData);
+// // const stringArr:string[] | number[] = ["mo4"]
+
+
+// const stringArr:(string | number)[] = ["mo4",3,4,"morsalin"]
+
+

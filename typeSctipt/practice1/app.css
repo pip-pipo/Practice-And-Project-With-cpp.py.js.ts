@@ -1,4 +1,4 @@
-
+/* 
 .spinner {
     width: 80px;
     height: 80px;
@@ -27,12 +27,53 @@
   position:fixed;
   left:0;
   top:0;
- }
+ } */
 
-
-body{
-    width: 100%;
-  
-    overflow-x: hidden;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+.container{ width: 300px}
+
+.slide{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+.slideCss{
+    
+    background: rgb(230, 221, 221);
+  
+
+}
+.slid{
+    width:100px;
+    height:30px;
+    display: flex;
+    justify-content:center;
+   
+}
+
+.slid div{
+    width:100%;
+    height:100%;
+    display: inline;
+    background: rgb(27, 151, 114);
+}
+
+.slid div:nth-child(3){
+    background: #000;
+}
+
+.slid div:nth-child(2){
+    background: rgb(117, 9, 9);
+}
+
+.slid div:nth-child(1){
+    background: rgb(14, 48, 201);
+}

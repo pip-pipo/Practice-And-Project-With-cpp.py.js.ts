@@ -226,13 +226,15 @@
 // Jane
 
 
-const student = {
-    name: "Rahul", 
-    showName: function(){
-        console.log(this.name); 
-    }
-}
-const greetStudent = student.showName.bind({
-    name: "Rahul from Bind"
-})
- greetStudent(); // Rahul from Bind)
+// const student = {
+//     name: "Rahul", 
+//     showName: function(){
+//         console.log(this.name); 
+//     }
+// }
+// const greetStudent = student.showName.bind({
+//     name: "Rahul from Bind"
+// })
+//  greetStudent(); // Rahul from Bind)
+
+
