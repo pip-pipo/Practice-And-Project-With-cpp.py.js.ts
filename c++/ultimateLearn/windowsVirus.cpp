@@ -5,13 +5,12 @@
 // const char endOfCharArray = '\0';
 
 // int main(int argc, char** argv) {
-    
-//     using namespace std;
 
+//     using namespace std;
 
 // int ret = 0;
 
-// if (argc == 2) 
+// if (argc == 2)
 
 // {cerr << "error: no arguments on cmd line" << endl;ret = 1;}
 
@@ -19,11 +18,6 @@
 
 //  {cout << *(argv[i]);argv[i]++;}cout << endl;}}return ret;
 // }
-
-
-
-
-
 
 // #include<iostream>
 
@@ -44,12 +38,9 @@
 //     return ret;
 // }
 
-
 // int charArrayLength(char* a){
-    
+
 // }
-
-
 
 // int main(){
 
@@ -57,44 +48,54 @@
 //     return 0;
 // }
 
-
-
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-auto salin(int a, int b ){
+auto salin(int a, int b)
+{
     return "morsalin" + a + b;
 };
 
-
-
-
-long add2(int i = 1){
+long add2(int i = 1)
+{
     return 3 + i;
 };
 
+int theGlobalValue = 0;
 
-int main(){
+int main()
+{
 
-  int fastdaysNumber =   add2(8);
-  cout<<fastdaysNumber<<endl;
+    int fastdaysNumber = add2(8);
+    cout << fastdaysNumber << endl;
 
+    int const a[] = {36, 4, 56, 66};
+    int const n = sizeof(a);
+    cout << n << "\n";
 
+    cout << a[0] << endl;
 
-int const a[] = {36,4,56,66};
-int const n = sizeof(a);
-cout<<n<<"\n";
+    cout << salin(3, 4) << endl;
 
-cout <<a[0]<<endl;
+    theGlobalValue = 1;
 
+     int const main[2][20] = {{34, 23},{3,4,5,6,7,88,112,113,221}};
 
+    int arrayOfFive[5] = {2,3,4,5,3};
 
-cout<<salin(3,4)<<endl;
+    int const n_rows = 3;
+    int const n_cols = 7;
+    int const m[n_rows][n_cols] = {
+        {1, 2, 3, 4, 5, 6, 7},
+        {8, 9, 10, 11, 12, 13, 14},
+        {15, 16, 17, 18, 19, 20, 21}};
 
+    cout<<m[0][1]<<endl;
 
-
+    const int main = 0;
+    auto sir = main;
+    cout<<((main+4)-3)<<endl;
 
 
     return 0;
 }
-

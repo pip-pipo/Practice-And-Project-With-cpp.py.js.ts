@@ -46,36 +46,35 @@
 // console.log(logPoint({x:34,y:45}));
 // const rect = { x: 33, y: 3, width: 3, height: 80 };
 // logPoint(rect);
-function max() {
-    var numbers = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        numbers[_i] = arguments[_i];
-    }
-    var result = 0;
-    for (var _a = 0, numbers_1 = numbers; _a < numbers_1.length; _a++) {
-        var isBig = numbers_1[_a];
-        if (isBig > result)
-            result = isBig;
-    }
-    return result;
+// function max(...numbers:number[]):number{
+//         let result = 0;
+//         for(let isBig of numbers) {
+//             if(isBig>result) result=isBig;
+//         }
+//         return result;
+// }
+// console.log(max(3,4,5,6))
+// console.log(Math.PI)
+// function randomPoint(radius){
+//     let angle =  Math.random() * 2 * Math.PI
+//     return {x:radius * Math.cos(angle), y:radius * Math.sin(angle)}
+// }
+// console.log(randomPoint(8))
+// console.log(Math.floor(randomPoint(88).y))
+// let count = 0 ,total = 0;
+// while(count <= 10){
+//   total+=count;
+//   console.log(total)
+//     count +=1;
+// }
+// function call(){
+//     console.log('pinted call');
+// }
+// if(3%2 === 1){
+//     call()
+// }
+function add(a) {
+    if (a === void 0) { a = 3; }
+    return a * a;
 }
-console.log(max(3, 4, 5, 6));
-console.log(Math.PI);
-function randomPoint(radius) {
-    var angle = Math.random() * 2 * Math.PI;
-    return { x: radius * Math.cos(angle), y: radius * Math.sin(angle) };
-}
-console.log(randomPoint(8));
-console.log(Math.floor(randomPoint(88).y));
-var count = 0, total = 0;
-while (count <= 10) {
-    total += count;
-    console.log(total);
-    count += 1;
-}
-function call() {
-    console.log('pinted call');
-}
-if (3 % 2 === 1) {
-    call();
-}
+console.log(add(4));
