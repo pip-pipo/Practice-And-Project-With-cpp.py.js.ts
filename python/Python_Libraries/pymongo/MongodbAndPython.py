@@ -31,7 +31,8 @@ try:
 
 
     elif(type(userSelect) ==int and userSelect ==3):
-        pass
+        Query.delete()
+
 
     elif(type(userSelect) ==int and userSelect ==4):
         pass
