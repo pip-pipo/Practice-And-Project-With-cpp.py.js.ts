@@ -1,0 +1,41 @@
+.AuthFrom input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 20px;
+  outline: none;
+  font-size: 1.2rem;
+}
+.AuthFrom input:focus {
+  border: 1.5px solid rgb(41, 184, 41);
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  height: 100vh;
+}
+.AuthFrom button {
+  padding: 10px 25px;
+  margin: 8px 0px 0px 0px;
+  font-size: 1.3rem;
+
+  background: #000;
+  color: #fff;
+  border: 1px solid rgb(15, 119, 145);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.AuthFrom button:hover {
+  border: 1px solid rgb(0, 0, 0);
+  background: rgb(243, 245, 243);
+  color: rgb(0, 0, 0);
+}

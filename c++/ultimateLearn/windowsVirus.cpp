@@ -101,19 +101,20 @@
 // }
 
 
-#include<iostream>
+// #include<iostream>
 
-using namespace std;
+// using namespace std;
 
-int main(){
+// int main(){
 
 
-    int const m[6] = {0,1,2,3,4,5};
-    cout<<m<<endl;
+//     int const m[6] = {0,1,2,3,4,5};
+//     cout<<m<<endl;
   
-    // for (int i = 0; i<long(m);i++){
-    //     cout<<m[i]<<endl;
-    // };
+//     // for (int i = 0; i<long(m);i++){
+//     //     cout<<m[i]<<endl;
+//     // };
 
-    return 0 ;
-}
+//     return 0 ;
+// }
+

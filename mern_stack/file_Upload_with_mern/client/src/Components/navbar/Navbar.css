@@ -1,0 +1,62 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  width: 100vw;
+  background: inherit;
+}
+
+.navContainer_logo {
+  width: 50%;
+  font-family:inherit;
+  font-size: xx-large;
+}
+
+.navContainer_ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  padding: 0px 48px;
+}
+.navContainer_ul li {
+    list-style: none;
+}
+.navContainer_a{
+    text-decoration: none;
+    font-family:inherit;
+}
+
+
+/* 
+mobiles = 320,
+mobilem = 375,
+mobilel = 425,
+tablet = 768,
+laptop = 1024,
+laptopl=1440,
+desktop = 2560
+
+pxesls in web pages view responsive
+*/
+
+
+@media screen and (max-width: 768px) {
+
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+
