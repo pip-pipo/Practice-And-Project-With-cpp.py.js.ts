@@ -22,11 +22,32 @@ const Signup = () => {
       setCliked(true);
       setAlertMsg("Please Fill All Fealds");
     } else {
-      await axios.post("/api/signIn", {
-          Email: Email,
-          Password: Password,
-        })
-        .then((response) => {
+      // await axios.post("/api/signIn", {
+      //     Email: Email,
+      //     Password: Password,
+      //   })
+      //   .then((response) => {
+      //     setCliked(true);
+      //     setAlertMsg("Congress Your Account have Created");
+      //   })
+      //   .catch((error) => {
+      //     setCliked(true);
+      //     setAlertMsg(error.message);
+      //   });
+
+      const res = await fetch("/api/signIn", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          Email,
+          Password,
+        }),
+      });
+      res
+        .json()
+        .then(() => {
           setCliked(true);
           setAlertMsg("Congress Your Account have Created");
         })

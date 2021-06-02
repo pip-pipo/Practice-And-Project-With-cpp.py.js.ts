@@ -13,6 +13,7 @@ const Signup = () => {
     ConfirmPassword: "",
   });
 
+  
   const { UserName, Email, Password, ConfirmPassword } = data;
   const inputHandler = (e) => {
     console.log(e.target.value);
@@ -28,25 +29,27 @@ const Signup = () => {
         setCliked(true);
         setAlertMsg("Password Should be Matched");
       } else {
-        await axios
-          .post("/api/signUp", {
+          const res = await fetch("/api/signUp",{
+            method: "POST",
+            headers:{
+              "Content-Type": "application/json"
+            },body: JSON.stringify({
             Username: UserName,
             Email: Email,
             Password: Password,
             ConfirmPassword: ConfirmPassword,
-          },{
-            headers: {
-              "Content-Type": "application/json",
-            }
-          })
-          .then((response) => {
+            })
+          });
+          
+          res.json().then(()=>{
             setCliked(true);
             setAlertMsg("Congress Your Account have Created");
           })
-          .catch((error) => {
+            .catch((error) => {
             setCliked(true);
             setAlertMsg(error.message);
           });
+
       }
     }
   };

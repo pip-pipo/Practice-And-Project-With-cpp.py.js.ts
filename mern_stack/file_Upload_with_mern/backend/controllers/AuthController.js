@@ -52,7 +52,7 @@ const SignIn = async (req, res) => {
          res.cookie("jwtToken",token,{
            expires : new Date(Date.now() + 2534234),
            httpOnly : true,
-           secure:false
+           secure:false,
          });
        
          if (!IsMatched) {
@@ -69,7 +69,7 @@ const SignIn = async (req, res) => {
 };
 
 const about =(req,res) =>{
-  res.send(req.rootUser);
+  res.status(200).send(req.rootUser);
 }
 
 const AuthController = {

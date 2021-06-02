@@ -1,3 +1,5 @@
+print("hi")
+
 # import random
 # import constant
 
@@ -104,12 +106,3 @@ import os
 #     simpleinterest = principal * numberofyears * ratefinterest / 100
 #     print(f"simple interest {simpleinterest}")
 #     counter=counter+1
-
-
-for i in range(5):
-    print("\t*"*i + "_" * i+" "+"{"*i + "(_*-*_)"+"}"*i)
-
-with open("myfile.py",'r') as myfile:
-    data =myfile.read()
-    print(myfile.readlines)
-    print(data)
